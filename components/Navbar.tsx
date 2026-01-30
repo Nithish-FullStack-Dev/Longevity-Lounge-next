@@ -90,8 +90,7 @@ const Navbar = () => {
                   {isActive ? (
                     isDesktop ? (
                       /* DESKTOP — Animated StarButton */
-                      <button
-                        type="button"
+                      <div
                         onClick={() =>
                           item.id
                             ? handleNavClick(item.id, item.label)
@@ -107,7 +106,7 @@ const Navbar = () => {
                         >
                           {item.label}
                         </StarButton>
-                      </button>
+                      </div>
                     ) : (
                       /* MOBILE — Plain button */
                       <button
@@ -143,10 +142,9 @@ const Navbar = () => {
 
           <div className={`nav-cta ${menuOpen ? "active" : ""}`}>
             {isDesktop ? (
-              <button
-                type="button"
+              <div
                 onClick={() => navigate.push("/callback")}
-                className="rounded-full"
+                className="rounded-full cursor-pointer"
               >
                 <StarButton
                   lightColor="#F6BF7F"
@@ -167,7 +165,7 @@ const Navbar = () => {
                 >
                   Request Callback
                 </StarButton>
-              </button>
+              </div>
             ) : (
               <button
                 type="button"

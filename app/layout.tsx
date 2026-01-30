@@ -1,17 +1,15 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import "./app.css";
 import "aos/dist/aos.css";
-import { Toaster } from "sonner";
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import ReactQueryProvider from "@/components/providers/ReactQueryProvider";
-import AOSProvider from "@/components/providers/AOSProvider";
+import LayoutClient from "@/components/LayoutClient";
 
 export const metadata: Metadata = {
   title: "Best Cancer Hospital in Jabalpur | Omega Hospitals Advanced Care",
   description:
-    "Leading cancer & multispecialty hospital in Jabalpur with AI-powered treatment, expert oncologists, 24/7 emergency care. Book appointment: 0261-226-5552",
+    "Leading cancer & multispecialty hospital in Jabalpur with AI-powered treatment, expert oncologists, 24/7 emergency care.",
 };
 
 export default function RootLayout({
@@ -21,11 +19,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="font-sans antialiased">
-        <AOSProvider />
-        <Toaster />
-
-        <ReactQueryProvider>
+      <body>
+        <LayoutClient>
           <Navbar />
           {children}
           <Footer />
@@ -33,7 +28,7 @@ export default function RootLayout({
           <div className="copyright">
             <p>© Copyright 2025 - Longevity Lounge All Rights Reserved.</p>
           </div>
-        </ReactQueryProvider>
+        </LayoutClient>
       </body>
     </html>
   );

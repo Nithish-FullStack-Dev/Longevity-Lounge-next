@@ -1,11 +1,11 @@
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 
 const CallBack = () => {
-  const navigate = useNavigate();
+  const navigate = useRouter();
   return (
     <div className="container">
       <div className="callback-content">
-        <button onClick={() => navigate("/")} className="back-link">
+        <button onClick={() => navigate.push("/")} className="back-link">
           <img
             src="/assets/images/callbacks/left-arrow.png"
             alt=""

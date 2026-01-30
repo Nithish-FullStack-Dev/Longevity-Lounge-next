@@ -41,7 +41,7 @@ const ReadyToBegin = () => {
                   <label>Choose Service</label>
                   <div className="select-wrapper">
                     <select className="custom-select">
-                      <option disabled selected>
+                      <option defaultValue="" disabled>
                         Select Department
                       </option>
                       <option>Find Your Biological Age</option>
@@ -57,13 +57,7 @@ const ReadyToBegin = () => {
                   </div>
                 </div>
                 <div className="hj-field submit">
-                  <button
-                    type="submit"
-                    onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-                      e.preventDefault();
-                      alert("form is currently under development");
-                    }}
-                  >
+                  <div>
                     <StarButton
                       lightColor="#F6BF7F"
                       backgroundColor="black"
@@ -83,7 +77,7 @@ const ReadyToBegin = () => {
                     >
                       Submit
                     </StarButton>
-                  </button>
+                  </div>
                 </div>
               </div>
             </form>

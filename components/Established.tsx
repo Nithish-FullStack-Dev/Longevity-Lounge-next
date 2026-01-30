@@ -5,39 +5,39 @@ import "aos/dist/aos.css";
 const Established = () => {
   const cards = [
     {
-      img: "./assets/images/most-trusted/1.jpg",
+      img: "/assets/images/most-trusted/1.jpg",
       title: "Find Your\nBiological Age",
     },
     {
-      img: "./assets/images/most-trusted/2.jpg",
+      img: "/assets/images/most-trusted/2.jpg",
       title: "Heart Risk\nMapping",
     },
     {
-      img: "./assets/images/most-trusted/3.jpg",
+      img: "/assets/images/most-trusted/3.jpg",
       title: "Neuro Genetic\nForecasting",
     },
     {
-      img: "./assets/images/most-trusted/4.jpg",
+      img: "/assets/images/most-trusted/4.jpg",
       title: "Predict 77\nCancers",
     },
     {
-      img: "./assets/images/most-trusted/5.jpg",
+      img: "/assets/images/most-trusted/5.jpg",
       title: "Gastro Health\nForecast",
     },
     {
-      img: "./assets/images/most-trusted/6.jpg",
+      img: "/assets/images/most-trusted/6.jpg",
       title: "Metabolic Risk\nProfiling",
     },
     {
-      img: "./assets/images/most-trusted/7.jpg",
+      img: "/assets/images/most-trusted/7.jpg",
       title: "Fertility Future\nClarity",
     },
     {
-      img: "./assets/images/most-trusted/8.jpg",
+      img: "/assets/images/most-trusted/8.jpg",
       title: "Kids Wellness\nPrediction",
     },
     {
-      img: "./assets/images/most-trusted/9.jpg",
+      img: "/assets/images/most-trusted/9.jpg",
       title: "Beauty Genetic\nBlueprint",
     },
   ];
