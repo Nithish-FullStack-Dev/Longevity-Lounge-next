@@ -1,0 +1,19 @@
+.intro-wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: black;
+}
+
+.intro-video {
+  width: 90%;
+  height: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+@media (max-width: 702px) {
+  .intro-video {
+    object-fit: contain;
+  }
+}
